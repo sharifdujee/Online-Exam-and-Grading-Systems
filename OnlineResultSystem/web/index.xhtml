@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+       
+        <h:form>
+            <h:outputLabel> Roll No </h:outputLabel>
+            <h:inputText value="${gradingSystem.roll}"></h:inputText> <br/><br/><!-- Student Roll Number-->
+            <h:outputLabel> Registration No</h:outputLabel>
+            <h:inputText value="${gradingSystem.reg}"></h:inputText> <br/><br/><!-- Student Registration Number-->
+            <h:outputLabel> Name</h:outputLabel>
+            <h:inputText value="${gradingSystem.name}"></h:inputText> <br/><br/><!-- Student Name -->
+            <h:outputLabel> Attendance</h:outputLabel>
+            <h:inputText value="${gradingSystem.attendence}"></h:inputText> <br/><br/><!-- Student Attendance Percentage -->
+            <h:outputLabel> Bengali </h:outputLabel>
+            <h:inputText value="${gradingSystem.bangla}"></h:inputText> <br/><br/><!-- Bengali total Marks -->
+            <h:outputLabel> English </h:outputLabel>
+            <h:inputText value="${gradingSystem.english}"></h:inputText> <br/><br/><!-- English Total Marks -->
+            <h:outputLabel> Math</h:outputLabel>
+            <h:inputText value="${gradingSystem.math}"></h:inputText> <br/><br/><!-- Math Total Marks -->
+            <h:outputLabel> Physics </h:outputLabel>
+            <h:inputText value="${gradingSystem.physics}"></h:inputText> <br/><br/><!-- Physics Total Marks -->
+            <h:outputLabel> Chemistry </h:outputLabel>
+            <h:inputText value="${gradingSystem.chemistry}"></h:inputText> <br/><br/><!-- chemistry Total Marks -->
+            <h:outputLabel> Biology </h:outputLabel>
+            <h:inputText value="${gradingSystem.biology}"></h:inputText> <br/><br/><!-- Biology Total Marks -->
+            
+            <h:commandButton value="Submit" action="#{gradingSystem.show()}"></h:commandButton>
+            <h:commandButton value="SHOW" action="#{gradingSystem.display()}"></h:commandButton>
+        </h:form>
+    </h:body>
+</html>

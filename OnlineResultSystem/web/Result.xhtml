@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        Trainee Result Checking System
+        <table>
+            <tr>
+            <th> Roll</th>
+            <th> Registration</th>
+            <th> Name</th>
+            <th> Attendance</th>
+            <th>Bengali</th>
+            <th> English</th>
+            <th> Math</th>
+            <th> Physics</th>
+            <th> Chemistry</th>
+            <th> Biology</th>
+            <th>Total</th>
+            <th>Average</th>
+            <th>G.P.A</th>
+            <th>Letter</th>
+            </tr>
+            <c:forEach items="#{gradingSystem.list}" var="rr">
+                <tr>
+                    <td> #{rr.roll}</td>
+                    <td> #{rr.reg}</td>
+                    <td> #{rr.name}</td>
+                    <td> #{rr.attendence}</td>
+                    <td> #{rr.bangla}</td>
+                    <td> #{rr.english}</td>
+                    <td> #{rr.math}</td>
+                    <td> #{rr.physics}</td>
+                    <td> #{rr.chemistry}</td>
+                    <td> #{rr.biology}</td>
+                    <td> #{rr.total}</td>
+                    <td> #{rr.avergage}</td>
+                    <td> #{rr.gpa}</td>
+                    <td> #{rr.letter}</td>
+                    
+                </tr>
+            </c:forEach>
+            
+        </table>
+    </h:body>
+</html>
